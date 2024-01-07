@@ -7,7 +7,7 @@ import androidx.activity.viewModels
 import com.guilhermelimasapplication.app.R
 import com.guilhermelimasapplication.app.appcomponents.base.BaseActivity
 import com.guilhermelimasapplication.app.databinding.ActivityFichaTreinoLivreBinding
-import com.guilhermelimasapplication.app.modules.fichatreinolivre.`data`.viewmodel.FichaTreinoLivreVM
+import com.guilhermelimasapplication.app.modules.fichatreinolivre.data.viewmodel.FichaTreinoLivreVM
 import com.guilhermelimasapplication.app.modules.home.ui.HomeActivity
 import kotlin.String
 import kotlin.Unit

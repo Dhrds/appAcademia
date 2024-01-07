@@ -1,9 +1,9 @@
-package com.guilhermelimasapplication.app.modules.home.`data`.viewmodel
+package com.guilhermelimasapplication.app.modules.home.data.viewmodel
 
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.guilhermelimasapplication.app.modules.home.`data`.model.HomeModel
+import com.guilhermelimasapplication.app.modules.home.data.model.HomeModel
 import org.koin.core.KoinComponent
 
 class HomeVM : ViewModel(), KoinComponent {

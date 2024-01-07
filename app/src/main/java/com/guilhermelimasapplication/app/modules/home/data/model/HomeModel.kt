@@ -1,4 +1,4 @@
-package com.guilhermelimasapplication.app.modules.home.`data`.model
+package com.guilhermelimasapplication.app.modules.home.data.model
 
 import com.guilhermelimasapplication.app.R
 import com.guilhermelimasapplication.app.appcomponents.di.MyApp
@@ -23,7 +23,7 @@ data class HomeModel(
   /**
    * TODO Replace with dynamic value
    */
-  var txtGoku: String? = MyApp.getInstance().resources.getString(R.string.lbl_goku)
+  var txtGoku: String? = "goku"
   ,
   /**
    * TODO Replace with dynamic value

@@ -5,7 +5,7 @@ import com.guilhermelimasapplication.app.R
 import com.guilhermelimasapplication.app.appcomponents.base.BaseActivity
 import com.guilhermelimasapplication.app.databinding.ActivityObjetivosBinding
 import com.guilhermelimasapplication.app.modules.home.ui.HomeActivity
-import com.guilhermelimasapplication.app.modules.objetivos.`data`.viewmodel.ObjetivosVM
+import com.guilhermelimasapplication.app.modules.objetivos.data.viewmodel.ObjetivosVM
 import kotlin.String
 import kotlin.Unit
 

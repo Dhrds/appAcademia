@@ -7,7 +7,7 @@ import androidx.activity.viewModels
 import com.guilhermelimasapplication.app.R
 import com.guilhermelimasapplication.app.appcomponents.base.BaseActivity
 import com.guilhermelimasapplication.app.databinding.ActivityFichaGokuBinding
-import com.guilhermelimasapplication.app.modules.fichagoku.`data`.viewmodel.FichaGokuVM
+import com.guilhermelimasapplication.app.modules.fichagoku.data.viewmodel.FichaGokuVM
 import com.guilhermelimasapplication.app.modules.home.ui.HomeActivity
 import kotlin.String
 import kotlin.Unit

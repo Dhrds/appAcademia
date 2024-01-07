@@ -1,9 +1,9 @@
-package com.guilhermelimasapplication.app.modules.fichanaruto.`data`.viewmodel
+package com.guilhermelimasapplication.app.modules.fichanaruto.data.viewmodel
 
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.guilhermelimasapplication.app.modules.fichanaruto.`data`.model.FichaNarutoModel
+import com.guilhermelimasapplication.app.modules.fichanaruto.data.model.FichaNarutoModel
 import org.koin.core.KoinComponent
 
 class FichaNarutoVM : ViewModel(), KoinComponent {
