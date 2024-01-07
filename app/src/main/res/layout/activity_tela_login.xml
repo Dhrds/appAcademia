@@ -39,23 +39,28 @@
             android:singleLine="true"
             android:text="@{telaLoginVM.telaLoginModel.txtAcademia}"
             style="@style/txtJuliusSansOneregular20" tools:text="@string/lbl_academia"/>
+
         <EditText
+            android:id="@+id/etInputLogin"
+            style="@style/etRoundedOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
             android:background="@drawable/rectangle_border_white_a700_radius_8"
             android:ellipsize="end"
             android:hint="@string/lbl_digite_o_login"
-            android:id="@+id/etInputLogin" android:inputType="text"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_16pxh"
-            android:layout_marginStart="@dimen/_16pxh"
-            android:layout_marginTop="@dimen/_32pxv"
-            android:layout_width="match_parent"
-            android:paddingBottom="@dimen/_13pxv"
-            android:paddingEnd="@dimen/_30pxh"
+            android:inputType="text"
             android:paddingStart="@dimen/_17pxh"
-            android:paddingTop="@dimen/_15pxv" android:singleLine="true"
+            android:paddingTop="@dimen/_15pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:singleLine="true"
             android:text="@={telaLoginVM.telaLoginModel.etInputLoginValue}"
             android:textColorHint="@color/white_A700_7f"
-            style="@style/etRoundedOutline" tools:ignore="Autofill"/>
+            tools:ignore="Autofill" />
+
         <EditText
             android:background="@drawable/rectangle_border_white_a700_radius_8"
             android:ellipsize="end"

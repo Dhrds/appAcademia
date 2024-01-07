@@ -7,17 +7,20 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:orientation="vertical" style="@style/groupStyledeep_purple_A400">
-        <TextView android:ellipsize="end"
-            android:gravity="center_horizontal"
+
+        <TextView
             android:id="@+id/txtLanguage"
+            style="@style/txtRubikMonoOneregular30"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_14pxh"
             android:layout_marginStart="@dimen/_14pxh"
             android:layout_marginTop="@dimen/_60pxv"
-            android:layout_width="match_parent"
-            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
             android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtLanguage}"
-            style="@style/txtRubikMonoOneregular30" tools:text="@string/lbl_seja_um_heroi"/>
+            tools:text="SEJA UM HEROI" />
+
         <LinearLayout android:gravity="start"
             android:id="@+id/linearNOME"
             android:layout_height="wrap_content"
@@ -33,11 +36,22 @@
                 android:singleLine="true"
                 android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtNome}"
                 style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_nome"/>
-            <View
-                android:background="@drawable/rectangle_border_white_a700_radius_8"
-                android:id="@+id/viewRectangle191"
+
+            <EditText
+                android:id="@+id/etRectangle191"
+                android:layout_width="@dimen/_180pxh"
                 android:layout_height="@dimen/_48pxv"
-                android:layout_marginStart="@dimen/_28pxh" android:layout_width="@dimen/_180pxh"/>
+                android:layout_marginStart="@dimen/_28pxh"
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:ellipsize="end"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:paddingStart="@dimen/_17pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                tools:ignore="Autofill" />
         </LinearLayout>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearIDADE"
@@ -54,11 +68,18 @@
                 android:singleLine="true"
                 android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtIdade}"
                 style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_idade"/>
-            <View
-                android:background="@drawable/rectangle_border_white_a700_radius_8"
+
+            <EditText
                 android:id="@+id/viewRectangle191One"
+                android:layout_width="@dimen/_166pxh"
                 android:layout_height="@dimen/_48pxv"
-                android:layout_marginStart="@dimen/_28pxh" android:layout_width="@dimen/_166pxh"/>
+                android:layout_marginStart="@dimen/_28pxh"
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:paddingStart="@dimen/_17pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearALTURA"
@@ -76,11 +97,18 @@
                 android:singleLine="true"
                 android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtALTURA}"
                 style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_altura"/>
-            <View
-                android:background="@drawable/rectangle_border_white_a700_radius_8"
+
+            <EditText
                 android:id="@+id/viewRectangle191Two"
+                android:layout_width="@dimen/_166pxh"
                 android:layout_height="@dimen/_48pxv"
-                android:layout_marginStart="@dimen/_25pxh" android:layout_width="@dimen/_166pxh"/>
+                android:layout_marginStart="@dimen/_25pxh"
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:paddingStart="@dimen/_17pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearPESO"
@@ -97,11 +125,14 @@
                 android:singleLine="true"
                 android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtPeso}"
                 style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_peso"/>
-            <View
-                android:background="@drawable/rectangle_border_white_a700_radius_8"
+
+            <EditText
                 android:id="@+id/viewRectangle191Three"
+                android:layout_width="@dimen/_166pxh"
                 android:layout_height="@dimen/_48pxv"
-                android:layout_marginStart="@dimen/_43pxh" android:layout_width="@dimen/_166pxh"/>
+                android:layout_marginStart="@dimen/_43pxh"
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:textColor="@color/white"/>
         </LinearLayout>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearIMC"
@@ -118,17 +149,25 @@
                 android:singleLine="true"
                 android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtIMC}"
                 style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_imc"/>
-            <View
-                android:background="@drawable/rectangle_border_white_a700_radius_8"
+
+            <EditText
                 android:id="@+id/viewRectangle191Four"
+                android:textColor="@color/white"
+                android:layout_width="@dimen/_100pxh"
                 android:layout_height="@dimen/_48pxv"
-                android:layout_marginStart="@dimen/_58pxh" android:layout_width="@dimen/_100pxh"/>
+                android:paddingStart="@dimen/_17pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:layout_marginStart="@dimen/_58pxh"
+                android:background="@drawable/rectangle_border_white_a700_radius_8" />
             <TextView android:ellipsize="end" android:id="@+id/txtOne"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_9pxv"
                 android:layout_marginStart="@dimen/_55pxh"
                 android:layout_marginTop="@dimen/_7pxv"
                 android:layout_weight="0.13" android:layout_width="0dp"
+
                 android:singleLine="true"
                 android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtOne}"
                 style="@style/txtRubikMonoOneregular25" tools:text="@string/lbl"/>
@@ -148,28 +187,23 @@
             android:paddingTop="@dimen/_10pxv" android:singleLine="true"
             android:text="@string/lbl_objetivos"
             android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_objetivos"/>
-        <LinearLayout android:gravity="center_horizontal"
-            android:id="@+id/linearBOTAOVOLTAR"
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVoltar"
+            style="@style/btnSolidRounded_1"
+            android:layout_width="@dimen/_236pxh"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_20pxv"
-            android:layout_marginEnd="@dimen/_14pxh"
-            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_12pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_12pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_voltar"
             android:layout_marginTop="@dimen/_30pxv"
-            android:layout_width="wrap_content"
-            android:orientation="vertical" style="@style/groupStylecornerRadius">
-            <androidx.appcompat.widget.AppCompatButton
-                android:ellipsize="end" android:gravity="center"
-                android:id="@+id/btnVoltar"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
-                android:paddingBottom="@dimen/_12pxv"
-                android:paddingEnd="@dimen/_30pxh"
-                android:paddingStart="@dimen/_30pxh"
-                android:paddingTop="@dimen/_12pxv"
-                android:singleLine="true"
-                android:text="@string/lbl_voltar"
-                android:textAllCaps="false"
-                style="@style/btnSolidRounded_1" tools:text="@string/lbl_voltar"/>
-        </LinearLayout>
+            android:textAllCaps="false"
+            tools:text="@string/lbl_voltar" />
     </LinearLayout>
 </layout>
