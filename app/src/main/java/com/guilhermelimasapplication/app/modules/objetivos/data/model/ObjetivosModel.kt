@@ -1,4 +1,4 @@
-package com.guilhermelimasapplication.app.modules.objetivos.`data`.model
+package com.guilhermelimasapplication.app.modules.objetivos.data.model
 
 import com.guilhermelimasapplication.app.R
 import com.guilhermelimasapplication.app.appcomponents.di.MyApp

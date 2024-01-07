@@ -11,7 +11,7 @@ import com.guilhermelimasapplication.app.modules.fichagoku.ui.FichaGokuActivity
 import com.guilhermelimasapplication.app.modules.fichakratos.ui.FichaKratosActivity
 import com.guilhermelimasapplication.app.modules.fichanaruto.ui.FichaNarutoActivity
 import com.guilhermelimasapplication.app.modules.fichatreinolivre.ui.FichaTreinoLivreActivity
-import com.guilhermelimasapplication.app.modules.home.`data`.viewmodel.HomeVM
+import com.guilhermelimasapplication.app.modules.home.data.viewmodel.HomeVM
 import kotlin.String
 import kotlin.Unit
 
@@ -28,11 +28,11 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home) {
       val destIntent = FichaGokuActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.frameStack626383224ec0athirtythree.setOnClickListener {
+    binding.linearColumnLivre.setOnClickListener {
       val destIntent = FichaTreinoLivreActivity.getIntent(this, null)
       startActivity(destIntent)
     }
-    binding.frameStackgoku.setOnClickListener {
+    binding.linearColumnGoku.setOnClickListener {
       val destIntent = FichaNarutoActivity.getIntent(this, null)
       startActivity(destIntent)
     }

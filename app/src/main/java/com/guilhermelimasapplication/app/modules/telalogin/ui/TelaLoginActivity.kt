@@ -5,7 +5,7 @@ import com.guilhermelimasapplication.app.R
 import com.guilhermelimasapplication.app.appcomponents.base.BaseActivity
 import com.guilhermelimasapplication.app.databinding.ActivityTelaLoginBinding
 import com.guilhermelimasapplication.app.modules.home.ui.HomeActivity
-import com.guilhermelimasapplication.app.modules.telalogin.`data`.viewmodel.TelaLoginVM
+import com.guilhermelimasapplication.app.modules.telalogin.data.viewmodel.TelaLoginVM
 import kotlin.String
 import kotlin.Unit
 
