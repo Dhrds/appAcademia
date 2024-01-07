@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="fichaTreinoLivreVM" type="com.guilhermelimasapplication.app.modules.fichatreinolivre.data.viewmodel.FichaTreinoLivreVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearFICHATREINOLI"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyledeep_purple_A400">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_60pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtLanguage}"
+            style="@style/txtRubikMonoOneregular30" tools:text="@string/lbl_seja_um_heroi"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearNOME"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_58pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txtNome"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.25" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtNome}"
+                style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_nome"/>
+            <View
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:id="@+id/viewRectangle191"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginStart="@dimen/_28pxh" android:layout_width="@dimen/_180pxh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearIDADE"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txtIdade"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.31" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtIdade}"
+                style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_idade"/>
+            <View
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:id="@+id/viewRectangle191One"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginStart="@dimen/_28pxh" android:layout_width="@dimen/_166pxh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearALTURA"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtALTURA"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.32" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtALTURA}"
+                style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_altura"/>
+            <View
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:id="@+id/viewRectangle191Two"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginStart="@dimen/_25pxh" android:layout_width="@dimen/_166pxh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearPESO"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txtPeso"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.26" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtPeso}"
+                style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_peso"/>
+            <View
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:id="@+id/viewRectangle191Three"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginStart="@dimen/_43pxh" android:layout_width="@dimen/_166pxh"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearIMC"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_23pxh"
+            android:layout_marginStart="@dimen/_23pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end" android:id="@+id/txtIMC"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.28" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtIMC}"
+                style="@style/txtRubikMonoOneregular15" tools:text="@string/lbl_imc"/>
+            <View
+                android:background="@drawable/rectangle_border_white_a700_radius_8"
+                android:id="@+id/viewRectangle191Four"
+                android:layout_height="@dimen/_48pxv"
+                android:layout_marginStart="@dimen/_58pxh" android:layout_width="@dimen/_100pxh"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginStart="@dimen/_55pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_weight="0.13" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{fichaTreinoLivreVM.fichaTreinoLivreModel.txtOne}"
+                style="@style/txtRubikMonoOneregular25" tools:text="@string/lbl"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnObjetivos"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_44pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="@dimen/_236pxh"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv" android:singleLine="true"
+            android:text="@string/lbl_objetivos"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_objetivos"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearBOTAOVOLTAR"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" style="@style/groupStylecornerRadius">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnVoltar"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_12pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_12pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_voltar"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_1" tools:text="@string/lbl_voltar"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

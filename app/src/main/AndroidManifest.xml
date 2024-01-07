@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.guilhermelimasapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.guilhermelimasapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.guilhermelimasapplication.app.modules.telalogin.ui.TelaLoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guilhermelimasapplication.app.modules.objetivos.ui.ObjetivosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guilhermelimasapplication.app.modules.fichatreinolivre.ui.FichaTreinoLivreActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guilhermelimasapplication.app.modules.fichagoku.ui.FichaGokuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guilhermelimasapplication.app.modules.fichakratos.ui.FichaKratosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guilhermelimasapplication.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.guilhermelimasapplication.app.modules.fichanaruto.ui.FichaNarutoActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
