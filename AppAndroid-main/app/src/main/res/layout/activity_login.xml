@@ -45,7 +45,9 @@
             android:singleLine="true"
             android:hint="@string/lbl_academia"
             tools:text="@{telaLoginVM.telaLoginModel.txtAcademia}"
-            style="@style/txtJuliusSansOneregular20" />
+            style="@style/txtJuliusSansOneregular20"
+            android:textColorHint="#F6F4F4"
+            />
 
         <EditText
             android:id="@+id/etInputLogin"
@@ -71,7 +73,7 @@
             android:background="@drawable/rectangle_border_white_a700_radius_8"
             android:ellipsize="end"
             android:hint="@string/lbl_digite_a_senha"
-            android:id="@+id/etInputSenha" android:inputType="text"
+            android:id="@+id/etInputSenha" android:inputType="textPassword"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_16pxh"
             android:layout_marginStart="@dimen/_16pxh"
@@ -83,17 +85,7 @@
             android:paddingTop="@dimen/_15pxv" android:singleLine="true"
             android:textColorHint="@color/white_A700_7f"
             style="@style/etRoundedOutline" tools:ignore="Autofill"/>
-        <TextView android:ellipsize="end"
-            android:id="@+id/txtEsqueceuasenh"
-            android:layout_gravity="end"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_16pxh"
-            android:layout_marginStart="@dimen/_16pxh"
-            android:layout_marginTop="@dimen/_20pxv"
-            android:layout_width="wrap_content"
-            android:singleLine="true"
-            tools:text="@{telaLoginVM.telaLoginModel.txtEsqueceuasenh}"
-            style="@style/txtOutfitregular13" android:text="@string/msg_esqueceu_a_senh"/>
+
         <LinearLayout android:gravity="center_horizontal"
             android:id="@+id/linearBtnLogin"
             android:layout_height="wrap_content"

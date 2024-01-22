@@ -3,12 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrincipalActivity">
+    tools:context=".PrincipalActivity"
+    android:background="@color/deep_purple_A400"
+    style="@style/groupStyledeep_purple_A400">
+    <TextView
+        android:id="@+id/txtLanguage"
+        style="@style/txtRubikMonoOneregular30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_17pxh"
+        android:layout_marginTop="@dimen/_39pxv"
+        android:layout_marginEnd="@dimen/_17pxh"
+        android:text="@string/msg_fichas_de_tre"
+        android:gravity="center_horizontal"
+        tools:text="@string/msg_fichas_de_tre" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:background="@color/deep_purple_A400"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtLanguage"
+        />
 
 
 </RelativeLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     Button loginButton;
+    TextView txtCriarconta;
     DatabaseHelper databaseHelper;
 
     @Override
@@ -22,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         databaseHelper = new DatabaseHelper(this);
-        databaseHelper.insertUser("admin","123"); // Rodar so uma vez pq se nao toda vez que executar ira criar um usuário
+        //databaseHelper.insertUser("admin","123"); // Rodar so uma vez pq se nao toda vez que executar ira criar um usuário
 
         username = findViewById(R.id.etInputLogin);
         password = findViewById(R.id.etInputSenha);
@@ -39,6 +41,14 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(LoginActivity.this, "Usuário ou senha Incorretos!", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+        txtCriarconta = findViewById(R.id.txtCriarconta);
+        txtCriarconta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CadastroActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -2,10 +2,13 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/deep_purple_A400"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/deep_purple_A400"
     cardCornerRadius="8dp">
     <LinearLayout
+
         android:id="@+id/linearColumnlanguageOne"
         style="@style/groupStyledeep_orange_A400cornerRadius"
         android:layout_width="match_parent"
@@ -13,6 +16,7 @@
         android:layout_marginStart="@dimen/_17pxh"
         android:layout_marginTop="@dimen/_32pxv"
         android:layout_marginEnd="@dimen/_17pxh"
+
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
